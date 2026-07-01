@@ -382,3 +382,69 @@ nav ul.active{
 }
 
 }
+
+/* ===========================
+   Mobile Navigation Buttons
+=========================== */
+
+@media (max-width:768px){
+
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+}
+
+nav h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    list-style:none;
+    padding:0;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+
+    display:block;
+    padding:10px 18px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.05);
+
+}
+
+#home{
+
+    padding-top:40px;
+
+}
+
+}
