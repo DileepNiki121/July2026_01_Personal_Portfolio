@@ -1,0 +1,384 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    position:sticky;
+    top:0;
+    background:#0f172a;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+}
+
+nav h2{
+    color:#fff;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    color:#0f172a;
+}
+
+/* ===========================
+   Home
+=========================== */
+
+#home{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#home h1{
+    font-size:55px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+#home h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+#home p{
+    max-width:700px;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   About
+=========================== */
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+#skills{
+    text-align:center;
+}
+
+.skill{
+    display:inline-block;
+    background:white;
+    margin:12px;
+    padding:18px 30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    font-weight:600;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-6px);
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+#projects{
+    text-align:center;
+}
+
+.project{
+    background:white;
+    margin:25px auto;
+    max-width:700px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.project p{
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Resume
+=========================== */
+
+#resume{
+    text-align:center;
+}
+
+#resume p{
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+#contact{
+    text-align:center;
+}
+
+form{
+    max-width:650px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border:2px solid #2563eb;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media(max-width:992px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#home h1{
+    font-size:42px;
+}
+
+section h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:768px){
+
+#home h1{
+    font-size:34px;
+}
+
+#home h2{
+    font-size:24px;
+}
+
+#home p{
+    font-size:16px;
+}
+
+section{
+    padding:60px 15px;
+}
+
+nav h2{
+    font-size:22px;
+}
+
+nav ul{
+    gap:15px;
+}
+
+button{
+    width:100%;
+}
+
+.project{
+    padding:20px;
+}
+
+.skill{
+    width:100%;
+    margin:10px 0;
+}
+
+}
+
+@media(max-width:480px){
+
+#home h1{
+    font-size:28px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    font-size:20px;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#121212;
+}
+
+.dark-mode .project,
+.dark-mode .skill{
+    background:#1f2937;
+    color:white;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+    display:block;
+}
+
+nav ul{
+    display:none;
+}
+
+nav ul.active{
+    display:flex;
+    flex-direction:column;
+}
+
+}
